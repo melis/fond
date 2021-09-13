@@ -5,6 +5,9 @@
   --c-accent: #93b5c9;
   --c-light: #d5e7fe;
 }
+.body_scrl {
+  overflow: hidden;
+}
 
 *,
 *::before,
@@ -445,7 +448,9 @@ body {
 .text_center {
   text-align: center;
 }
-
+.close_menu {
+  display: none;
+}
 /* Tablet */
 
 @media (max-width: 992px) {
@@ -457,14 +462,18 @@ body {
     position: fixed;
     right: -320px;
     background: #93b5c9;
-    transition: 0.3s right;
+    transition: 0.5s right;
     position: fixed;
     width: 320px;
     height: 100vh;
     top: 0;
+    padding: 50px 15px 0 50px;
   }
+
   .nav > a {
+    color: #fff;
     display: block;
+    margin: 15px 0;
   }
 
   .active_nav {
@@ -474,6 +483,20 @@ body {
   }
   .burger {
     display: block;
+  }
+
+  .close_menu {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 52px;
+    display: inline-block;
+    transform: rotate(0deg);
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .close_menu_active {
+    transform: rotate(45deg);
   }
 
   .logo_box {

@@ -12,17 +12,12 @@
 })();
 
 $(document).ready(function () {
-  $(".burger").click(function (event) {
+  $(".burger, .shtor,  .close_menu").click(function (event) {
     console.log(event);
     $(".burger").toggleClass("active");
     $(".nav").toggleClass("active_nav");
     $(".shtor").toggleClass("active_shtor");
-  });
-
-  $(".shtor").click(function (event) {
-    console.log(event);
-    $(".burger").toggleClass("active");
-    $(".nav").toggleClass("active_nav");
-    $(".shtor").toggleClass("active_shtor");
+    $("body").toggleClass("body_scrl");
+    $(".close_menu").toggleClass("close_menu_active ");
   });
 });
