@@ -1,5 +1,8 @@
 /* BASE */
 
+.margin_60 {
+  margin: 60px auto;
+}
 :root {
   --c-brand: #284a76;
   --c-accent: #93b5c9;
@@ -19,11 +22,12 @@ body {
   font-family: Montserrat;
   min-width: 320px;
   margin: 0;
-  padding: 30px 0 0 0;
 }
 
 /* COMPONENTS */
-
+.tablet {
+  display: none;
+}
 .shtor {
   position: fixed;
   width: 100%;
@@ -72,6 +76,7 @@ body {
 }
 
 .header {
+  padding-top: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -122,11 +127,27 @@ body {
 }
 
 .burger::before {
+  transition: 0.5s;
   top: 0;
 }
 
 .burger::after {
+  transition: 0.5s;
   bottom: 0;
+}
+
+.burger_active > span {
+  border: 1px solid transparent;
+}
+
+.burger_active::before {
+  transform: rotate(45deg);
+  top: 9px;
+}
+
+.burger_active::after {
+  transform: rotate(-45deg);
+  bottom: 9px;
 }
 
 .container {
@@ -432,11 +453,6 @@ body {
 
 /* HOME PAGE */
 
-.home .header {
-  /* margin-top: 50px; */
-  margin-bottom: 115px;
-}
-
 .home .section .title {
   margin-bottom: 30px;
 }
@@ -451,23 +467,27 @@ body {
 .close_menu {
   display: none;
 }
+
 /* Tablet */
 
 @media (max-width: 992px) {
+  .tablet {
+    display: block;
+  }
   .home .header {
     gap: 55px;
   }
   .nav {
     display: block;
     position: fixed;
-    right: -320px;
+    left: -320px;
     background: #93b5c9;
-    transition: 0.5s right;
+    transition: 0.5s;
     position: fixed;
     width: 320px;
     height: 100vh;
     top: 0;
-    padding: 50px 15px 0 50px;
+    padding: 30px;
   }
 
   .nav > a {
@@ -477,7 +497,7 @@ body {
   }
 
   .active_nav {
-    right: 0;
+    left: 0px;
 
     z-index: 1;
   }
@@ -487,8 +507,8 @@ body {
 
   .close_menu {
     position: absolute;
-    top: 15px;
-    left: 15px;
+    top: 20px;
+    right: 30px;
     font-size: 52px;
     display: inline-block;
     transform: rotate(0deg);
@@ -572,5 +592,35 @@ body {
   }
   .footer .container {
     gap: 70px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 480px) {
+  .mobileNone {
+    display: none;
+  }
+  .section .container,
+  .footer .container {
+    display: block;
+    text-align: center;
+  }
+  .nav {
+    overflow: hidden;
+    padding: 0 30px;
+    width: 100%;
+    left: 0;
+    top: 68px;
+    height: auto;
+    z-index: 1;
+    height: 0;
+  }
+  .active_nav {
+    /* top: 68px; */
+    height: 100vh;
+  }
+  .header_container {
+    background-color: var(--c-accent);
   }
 }
