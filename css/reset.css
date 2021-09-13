@@ -97,6 +97,9 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+body {
+  padding: 30px 0 0 0;
+}
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -126,7 +129,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 table {

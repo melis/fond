@@ -16,10 +16,26 @@ body {
   font-family: Montserrat;
   min-width: 320px;
   margin: 0;
-  padding: 0%;
+  padding: 30px 0 0 0;
 }
 
 /* COMPONENTS */
+
+.shtor {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  opacity: 0;
+  cursor: pointer;
+  top: 0;
+  z-index: -1000;
+}
+
+.active_shtor {
+  z-index: 1;
+  opacity: 0.5;
+}
 
 .burger {
   display: none;
@@ -93,22 +109,21 @@ body {
   transform: translateY(9px);
 }
 
-.burger::before {
-  position: absolute;
-  content: "";
-  width: 33px;
-  border: 1px solid;
-  top: 0;
-  left: 0;
-}
-
+.burger::before,
 .burger::after {
   position: absolute;
   content: "";
   width: 33px;
   border: 1px solid;
-  bottom: 0;
   left: 0;
+}
+
+.burger::before {
+  top: 0;
+}
+
+.burger::after {
+  bottom: 0;
 }
 
 .container {
@@ -415,7 +430,7 @@ body {
 /* HOME PAGE */
 
 .home .header {
-  margin-top: 50px;
+  /* margin-top: 50px; */
   margin-bottom: 115px;
 }
 
@@ -438,7 +453,24 @@ body {
     gap: 55px;
   }
   .nav {
-    display: none;
+    display: block;
+    position: fixed;
+    right: -320px;
+    background: #93b5c9;
+    transition: 0.3s right;
+    position: fixed;
+    width: 320px;
+    height: 100vh;
+    top: 0;
+  }
+  .nav > a {
+    display: block;
+  }
+
+  .active_nav {
+    right: 0;
+
+    z-index: 1;
   }
   .burger {
     display: block;
