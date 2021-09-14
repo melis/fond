@@ -3,6 +3,7 @@
 .margin_60 {
   margin: 60px auto;
 }
+
 :root {
   --c-brand: #284a76;
   --c-accent: #93b5c9;
@@ -489,7 +490,7 @@ body {
   .home .header {
     gap: 55px;
   }
-  .nav {
+  .header .nav {
     display: block;
     position: fixed;
     left: -320px;
@@ -502,7 +503,7 @@ body {
     padding: 30px;
   }
 
-  .nav > a {
+  .header .nav > a {
     font-style: normal;
     font-weight: bold;
     font-family: Montserrat;
@@ -513,7 +514,7 @@ body {
     margin: 50px 0;
   }
 
-  .active_nav {
+  .header .active_nav {
     left: 0px;
 
     z-index: 1;
@@ -661,7 +662,7 @@ body {
     display: block;
     text-align: center;
   }
-  .nav {
+  .header .nav {
     overflow: hidden;
     padding: 0 30px;
     width: 100%;
@@ -671,7 +672,7 @@ body {
     z-index: 1;
     height: 0;
   }
-  .active_nav {
+  .header .active_nav {
     /* top: 68px; */
     height: 100vh;
   }
@@ -681,12 +682,35 @@ body {
 
   .section_accent > .container {
     display: flex;
+    gap: 0;
     flex-direction: column-reverse;
   }
   .section__img {
     width: 80%;
   }
+  .doctor-section {
+    margin-bottom: 180px;
+  }
+  .doctor-section .section__outbordered {
+    height: 400px;
+    width: 100%;
+  }
+  .doctor-section .section__poster {
+    flex-basis: 0;
+  }
+
   .section__img_outbordered {
-    transform: translateY(100px);
+    width: 75%;
+    transform: translateY(80px);
+  }
+  .contest {
+    padding-bottom: 0;
+  }
+  .footer__logo {
+    font-family: Krona One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 45px;
   }
 }
