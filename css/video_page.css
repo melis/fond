@@ -1,0 +1,30 @@
+.video_banner {
+  display: flex;
+  flex-direction: column;
+  height: 680px;
+  justify-content: center;
+  border: 1px solid;
+  background-image: url(/images/video_banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.title {
+  text-align: center;
+}
+
+.video_banner__title {
+  color: #93b5c9;
+  text-align: center;
+}
+
+.video_banner__text {
+  text-align: center;
+  color: #ffffff;
+  max-width: 670px;
+  margin: auto;
+}
+.video_banner__button {
+  background: #93b5c9;
+  margin: auto;
+}
