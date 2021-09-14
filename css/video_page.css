@@ -33,9 +33,24 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  gap: 0;
 }
 .videos_row .video_card {
-  border: 1px solid;
   width: 300px;
   height: 410px;
+  margin-bottom: 20px;
+  padding: 5px;
+  background: #d5e7fe;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.videos_row .video_card > ul {
+  margin: 15px auto auto 20px;
+}
+
+.videos_row .video_card li {
+  margin: 10px 0;
 }
