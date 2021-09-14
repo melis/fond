@@ -113,7 +113,7 @@ body {
 .burger > span {
   display: block;
   width: 20px;
-  border: 1px solid black;
+  border-top: 2px solid black;
   margin-right: 13px;
   transform: translateY(9px);
 }
@@ -123,7 +123,7 @@ body {
   position: absolute;
   content: "";
   width: 33px;
-  border: 1px solid black;
+  border-top: 2px solid black;
   left: 0;
 }
 
@@ -138,7 +138,7 @@ body {
 }
 
 .burger_active > span {
-  border: 1px solid transparent;
+  border: 2px solid transparent;
 }
 
 .burger_active::before {
@@ -154,7 +154,7 @@ body {
 .container {
   max-width: 1180px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 9px;
 }
 
 .button {
