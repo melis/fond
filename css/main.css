@@ -169,6 +169,7 @@ body {
 }
 
 .title {
+  font-family: Montserrat;
   color: var(--c-brand);
   font-size: 48px;
   font-weight: 700;
@@ -176,9 +177,14 @@ body {
 }
 
 .text {
+  font-family: Montserrat;
   font-size: 18px;
   line-height: 22px;
   opacity: 0.8;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .section .container {
@@ -637,6 +643,19 @@ body {
   .language_active {
     display: flex;
   }
+
+  .title {
+    font-size: 36px;
+    line-height: 44px;
+  }
+  .button {
+    margin: auto;
+    text-align: center;
+  }
+
+  .home .section .title {
+    margin-bottom: 20px;
+  }
   .section .container,
   .footer .container {
     display: block;
@@ -658,5 +677,16 @@ body {
   }
   .header_container {
     background-color: var(--c-accent);
+  }
+
+  .section_accent > .container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .section__img {
+    width: 80%;
+  }
+  .section__img_outbordered {
+    transform: translateY(100px);
   }
 }
