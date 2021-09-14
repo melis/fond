@@ -18,16 +18,10 @@
     <link rel="stylesheet" href="./css/reset.css" />
 </head>
 
-<body class="home">
+<body class="home ">
     <div class="shtor mobileNone"></div>
 
-    <div class="video_modal">
-        <div class="section__video video video_with-hint container">
-            <div class="video__inner">
-                <video src="./images/movie.mp4"></video>
-            </div>
-        </div>
-    </div>
+    
 
     <div class="container header_container">
         <header class="header">
@@ -55,6 +49,19 @@
             </div>
             <div class="burger"><span></span></div>
         </header>
+    </div>
+    <div class="video_container">
+        <div class="video_modal">
+            <span class="video_modal__close">Закрыть</span>
+            <div class="section__video video video_with-hint container">
+                <div class="video__inner">
+                    <video src="./images/movie.mp4"></video>
+                </div>
+                <div class="video__controls">
+                    <button class="video__play"><i class="fas fa-play"></i></button>
+                </div>
+            </div>
+        </div>
     </div>
 
     <section  class="section margin_60">

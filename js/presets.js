@@ -22,8 +22,9 @@ $(document).ready(function () {
     $('.language').toggleClass('language_active')
   });
 
-  $('.video_card__img, .video_modal').click(function(){
+  $('.video_card__img, .video_modal__close').click(function(){
     $('.video_modal').toggleClass('video_modal__active')
       $("body").toggleClass("body_scrl");
+      
   })
 });

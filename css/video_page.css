@@ -83,9 +83,19 @@
   cursor: pointer;
 }
 
+.video_container {
+  position: relative;
+  width: 100%;
+}
+.video_container .video {
+  margin: 145px auto;
+  width: 1020px;
+  height: 620px;
+}
 .video_modal {
   display: none;
   position: fixed;
+  top: 0px;
   width: 100%;
   height: 100vh;
   background: rgba(0, 0, 0, 0.9);
@@ -93,4 +103,30 @@
 }
 .video_modal__active {
   display: block;
+}
+.video_modal__close {
+  position: absolute;
+  right: 50px;
+  top: 50px;
+  display: inline-block;
+  color: #fff;
+  padding: 10px 15px;
+  cursor: pointer;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+
+@media (max-width: 992px) {
+  .video_container .video {
+    width: 710px;
+    height: 450px;
+    margin: 50px auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .video_container .video {
+    width: 350px;
+    height: 193px;
+  }
 }
