@@ -663,6 +663,9 @@ body {
     display: block;
     text-align: center;
   }
+  .video_card__info {
+    text-align: left;
+  }
   .header .nav {
     overflow: hidden;
     padding: 0 30px;
