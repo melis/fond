@@ -106,8 +106,8 @@
 }
 .video_modal__close {
   position: absolute;
-  right: 50px;
-  top: 50px;
+  right: 15px;
+  top: 15px;
   display: inline-block;
   color: #fff;
   padding: 10px 15px;
