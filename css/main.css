@@ -467,10 +467,16 @@ body {
 .close_menu {
   display: none;
 }
+.mobile {
+  display: none;
+}
 
 /* Tablet */
 
 @media (max-width: 992px) {
+  .mobile {
+    display: none;
+  }
   .tablet {
     display: block;
   }
@@ -491,9 +497,14 @@ body {
   }
 
   .nav > a {
+    font-style: normal;
+    font-weight: bold;
+    font-family: Montserrat;
     color: #fff;
     display: block;
-    margin: 15px 0;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 50px 0;
   }
 
   .active_nav {
@@ -598,6 +609,9 @@ body {
 /* Mobile */
 
 @media (max-width: 480px) {
+  .mobile {
+    display: block;
+  }
   .burger {
     position: absolute;
     right: 15px;
@@ -613,6 +627,15 @@ body {
   }
   .header_container {
     height: 92px;
+  }
+  .language {
+    position: absolute;
+    left: 15px;
+    display: none;
+  }
+
+  .language_active {
+    display: flex;
   }
   .section .container,
   .footer .container {

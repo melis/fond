@@ -19,5 +19,6 @@ $(document).ready(function () {
     $(".shtor").toggleClass("active_shtor");
     $("body").toggleClass("body_scrl");
     $(".close_menu").toggleClass("close_menu_active ");
+    $('.language').toggleClass('language_active')
   });
 });
