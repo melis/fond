@@ -30,6 +30,7 @@
 }
 
 .videos_row {
+  font-family: "Montserrat";
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -53,4 +54,27 @@
 
 .videos_row .video_card li {
   margin: 10px 0;
+}
+.video_card__info span {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+  width: 95px;
+}
+.video_card__info a {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #284a76;
+  margin-left: 5px;
+}
+.video_card__info li:first-child a {
+  font-weight: normal;
+}
+.video_card__info li:last-child a {
+  border: 1px solid #284a76;
+  padding: 3px;
+  border-radius: 5px;
 }
