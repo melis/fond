@@ -1,3 +1,21 @@
 .posters_banner {
-  background: #284a76;
+    background: #284a76;
+}
+
+.row .poster_card {
+    width: 300px;
+    height: 541px;
+    margin-bottom: 20px;
+    padding: 5px;
+    padding-top: 25px;
+    background: #d5e7fe;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row .poster_card>ul {
+    margin: 15px auto auto 20px;
 }
