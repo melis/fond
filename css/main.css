@@ -598,8 +598,21 @@ body {
 /* Mobile */
 
 @media (max-width: 480px) {
+  .burger {
+    position: absolute;
+    right: 15px;
+  }
+  .logo_box {
+    text-align: center;
+  }
   .mobileNone {
     display: none;
+  }
+  .header {
+    padding-top: 40px;
+  }
+  .header_container {
+    height: 92px;
   }
   .section .container,
   .footer .container {
@@ -611,7 +624,7 @@ body {
     padding: 0 30px;
     width: 100%;
     left: 0;
-    top: 68px;
+    top: 92px;
     height: auto;
     z-index: 1;
     height: 0;
