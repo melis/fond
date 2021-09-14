@@ -28,3 +28,14 @@
   background: #93b5c9;
   margin: auto;
 }
+
+.videos_row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.videos_row .video_card {
+  border: 1px solid;
+  width: 300px;
+  height: 410px;
+}
