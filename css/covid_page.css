@@ -86,6 +86,10 @@
             width: 135px;
         }
         
+        .covid_info__list>span:last-child {
+            flex-grow: 1;
+        }
+        
         .covid_info a {
             font-weight: 600;
             color: #284A76;
@@ -95,7 +99,78 @@
             gap: 30px;
         }
         
+        .concurs .container {
+            gap: 0;
+        }
+        
+        .copy_link {
+            border: 1px solid #284a76;
+            padding: 3px;
+            border-radius: 5px;
+        }
+        
+        .cards {
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        
+        .card {
+            width: 280px;
+            /* border: 1px solid; */
+        }
+        
+        .card_doc {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            background: #D5E7FE;
+            border-radius: 10px;
+            height: 295px;
+            align-items: center;
+        }
+        
+        .card_text {
+            /* line-height: 227px; */
+            position: relative;
+            flex-grow: 1;
+        }
+        
+        .card_text span {
+            padding: 15px;
+            font-weight: bold;
+            font-size: 25px;
+            line-height: 30px;
+            color: #284A76;
+            display: inline-block;
+            margin: auto;
+            text-align: center;
+        }
+        
+        .card .button {
+            margin: 5px auto;
+            width: 95%;
+        }
+        
+        .card_img {
+            margin-top: 20px;
+        }
+        
+        .card_img .button {
+            width: 100%;
+            margin: 0;
+        }
+        
+        .card_img img {
+            width: 100%;
+        }
+        
         @media (max-width: 992px) {
+            .cards {
+                justify-content: space-around;
+            }
+            .card {
+                width: 40%;
+            }
             .covid_img {
                 width: 630px;
             }
@@ -118,6 +193,10 @@
         }
         
         @media (max-width: 480px) {
+            .card {
+                margin: 20px auto;
+                width: 280px;
+            }
             .covid_img {
                 width: 330px;
                 height: 243px;
