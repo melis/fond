@@ -226,4 +226,8 @@
   .covid_img {
     width: 100%;
   }
+
+  .covid_info__list {
+    gap: 0;
+  }
 }
