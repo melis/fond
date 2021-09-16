@@ -1,229 +1,229 @@
-        .tab {
-            border-bottom: 5px solid #93B5C9;
-        }
-        
-        .tab>div {
-            display: flex;
-            justify-content: center;
-        }
-        
-        .tab_item {
-            border-bottom: 5px solid #93B5C9;
-            width: 264px;
-            padding: 20px 0;
-            transform: translateY(5px);
-        }
-        
-        .tab_item a {
-            font-style: normal;
-            font-weight: bold;
-            font-size: 24px;
-            line-height: 29px;
-            color: #93B5C9;
-        }
-        
-        .tab_item__active {
-            border-bottom: 5px solid #284A76;
-        }
-        
-        .tab_item__active a {
-            color: #284A76;
-        }
-        
-        .covidCard {
-            font-family: Montserrat;
-            font-style: normal;
-            font-size: 24px;
-            line-height: 29px;
-            height: 400px;
-            background: #D5E7FE;
-            border-radius: 10px;
-            margin: 40px 0;
-            display: flex;
-            padding: 20px;
-            gap: 50px;
-            /* align-items: center; */
-        }
-        
-        .covid_img {
-            width: 425px;
-            height: 360px;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            border-radius: 10px;
-        }
-        
-        .covid_info {
-            font-family: Montserrat;
-            font-style: normal;
-            font-weight: normal;
-            padding: 15px 0;
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-        
-        .covid_info li {
-            margin: 15px 0;
-        }
-        
-        .covid_info__list {
-            display: flex;
-            gap: 20px;
-            /* justify-content: space-between; */
-        }
-        
-        .covid_info__list span {
-            display: block;
-        }
-        /* .covid_info__list span:last-child {
+.tab {
+  border-bottom: 5px solid #93b5c9;
+}
+
+.tab > div {
+  display: flex;
+  justify-content: center;
+}
+
+.tab_item {
+  border-bottom: 5px solid #93b5c9;
+  width: 264px;
+  padding: 20px 0;
+  transform: translateY(5px);
+}
+
+.tab_item a {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  color: #93b5c9;
+}
+
+.tab_item__active {
+  border-bottom: 5px solid #284a76;
+}
+
+.tab_item__active a {
+  color: #284a76;
+}
+
+.covidCard {
+  font-family: Montserrat;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 29px;
+  height: 400px;
+  background: #d5e7fe;
+  border-radius: 10px;
+  margin: 40px 0;
+  display: flex;
+  padding: 20px;
+  gap: 50px;
+  /* align-items: center; */
+}
+
+.covid_img {
+  width: 425px;
+  height: 360px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
+}
+
+.covid_info {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  padding: 15px 0;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.covid_info li {
+  margin: 15px 0;
+}
+
+.covid_info__list {
+  display: flex;
+  gap: 20px;
+  /* justify-content: space-between; */
+}
+
+.covid_info__list span {
+  display: block;
+}
+/* .covid_info__list span:last-child {
         flex-grow: 1;
     } */
-        
-        .covid_info__list>span:first-child {
-            width: 135px;
-        }
-        
-        .covid_info__list>span:last-child {
-            flex-grow: 1;
-        }
-        
-        .covid_info a {
-            font-weight: 600;
-            color: #284A76;
-        }
-        
-        .tab>.container {
-            gap: 30px;
-        }
-        
-        .concurs .container {
-            gap: 0;
-        }
-        
-        .copy_link {
-            border: 1px solid #284a76;
-            padding: 3px;
-            border-radius: 5px;
-        }
-        
-        .cards {
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-        
-        .card {
-            width: 280px;
-            /* border: 1px solid; */
-        }
-        
-        .card_doc {
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            background: #D5E7FE;
-            border-radius: 10px;
-            height: 295px;
-            align-items: center;
-        }
-        
-        .card_text {
-            /* line-height: 227px; */
-            position: relative;
-            flex-grow: 1;
-        }
-        
-        .card_text span {
-            padding: 15px;
-            font-weight: bold;
-            font-size: 25px;
-            line-height: 30px;
-            color: #284A76;
-            display: inline-block;
-            margin: auto;
-            text-align: center;
-        }
-        
-        .card .button {
-            margin: 5px auto;
-            width: 95%;
-        }
-        
-        .card_img {
-            margin-top: 20px;
-        }
-        
-        .card_img .button {
-            width: 100%;
-            margin: 0;
-        }
-        
-        .card_img img {
-            width: 100%;
-        }
-        
-        @media (max-width: 992px) {
-            .cards {
-                justify-content: space-around;
-            }
-            .card {
-                width: 40%;
-            }
-            .covid_img {
-                width: 630px;
-            }
-            .tab_item {
-                width: 230px;
-            }
-            .covidCard {
-                margin: 50px auto;
-                width: 670px;
-                height: 777px;
-                flex-direction: column;
-                gap: 20px;
-            }
-            .covid_info {
-                padding: 0;
-            }
-            .covid_info .button {
-                margin: auto;
-            }
-        }
-        
-        @media (max-width: 480px) {
-            .card {
-                margin: 20px auto;
-                width: 280px;
-            }
-            .covid_img {
-                width: 330px;
-                height: 243px;
-            }
-            .covidCard .button {
-                margin: 0 auto;
-            }
-            .tab>.container {
-                display: flex;
-            }
-            .tab,
-            .tab_item {
-                border: none;
-                padding: 0;
-            }
-            .tab_item a {
-                font-size: 10px;
-                line-height: 12px;
-            }
-            .covidCard {
-                margin: 60px auto;
-                width: 350px;
-                height: 680px;
-                font-size: 18px;
-                line-height: 22px;
-            }
-            .covid_img {
-                width: 100%
-            }
-        }
+
+.covid_info__list > span:first-child {
+  min-width: 135px;
+}
+
+.covid_info__list > span:last-child {
+  flex-grow: 1;
+}
+
+.covid_info a {
+  font-weight: 600;
+  color: #284a76;
+}
+
+.tab > .container {
+  gap: 30px;
+}
+
+.concurs .container {
+  gap: 0;
+}
+
+.copy_link {
+  border: 1px solid #284a76;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.cards {
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 280px;
+  /* border: 1px solid; */
+}
+
+.card_doc {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: #d5e7fe;
+  border-radius: 10px;
+  height: 295px;
+  align-items: center;
+}
+
+.card_text {
+  display: flex;
+  position: relative;
+  flex-grow: 1;
+}
+
+.card_text span {
+  padding: 15px;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  color: #284a76;
+  display: inline-block;
+  margin: auto;
+  text-align: center;
+}
+
+.card .button {
+  margin: 5px auto;
+  width: 95%;
+}
+
+.card_img {
+  margin-top: 20px;
+}
+
+.card_img .button {
+  width: 100%;
+  margin: 0;
+}
+
+.card_img img {
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  .cards {
+    justify-content: space-around;
+  }
+  .card {
+    width: 40%;
+  }
+  .covid_img {
+    width: 630px;
+  }
+  .tab_item {
+    width: 230px;
+  }
+  .covidCard {
+    margin: 50px auto;
+    width: 670px;
+    height: 777px;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .covid_info {
+    padding: 0;
+  }
+  .covid_info .button {
+    margin: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    margin: 20px auto;
+    width: 280px;
+  }
+  .covid_img {
+    width: 330px;
+    height: 243px;
+  }
+  .covidCard .button {
+    margin: 0 auto;
+  }
+  .tab > .container {
+    display: flex;
+  }
+  .tab,
+  .tab_item {
+    border: none;
+    padding: 0;
+  }
+  .tab_item a {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .covidCard {
+    margin: 60px auto;
+    width: 350px;
+    height: 680px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .covid_img {
+    width: 100%;
+  }
+}
