@@ -1,42 +1,68 @@
 .about_1,
 .about_2 {
-    width: 50%;
+  width: 50%;
 }
 
 .about_2 {
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .section_about {
-    padding: 0;
-    display: flex;
-    margin-top: -60px;
-    height: 670px;
-    position: relative;
+  padding: 0;
+  display: flex;
+
+  height: 670px;
+  position: relative;
 }
 
 .about_container {
-    left: 50%;
-    transform: translateX(-50%);
-    margin: auto;
-    width: 100%;
-    position: absolute;
-    height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: auto;
+  width: 100%;
+  position: absolute;
+  height: 100%;
 }
 
 .about_info .title {
-    text-align: left;
-    margin-bottom: 40px;
+  text-align: left;
+  margin-bottom: 40px;
 }
 
 .about_info {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.about_container>div {
-    width: 50%;
+@media (max-width: 992px) {
+  .section_about {
+    height: 400px;
+  }
+}
+
+@media (max-width: 767px) {
+  .about_container {
+    position: static;
+    transform: none;
+    padding: 50px 15px;
+  }
+  .section_about {
+    display: block;
+  }
+  .about_info {
+    width: 100%;
+  }
+  .section_about {
+    display: block;
+    height: auto;
+  }
+  .about_2 {
+    height: 300px;
+    width: 100%;
+  }
 }
