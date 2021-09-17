@@ -761,6 +761,7 @@ body {
   bottom: 100px;
   color: #000;
   transition: 0.3s;
+  border-radius: 50%;
   width: 30px;
   height: 30px;
 }
