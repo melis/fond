@@ -102,6 +102,12 @@ body {
   font-size: 14px;
   background: none;
 }
+.danger {
+  color: red !important;
+}
+.primary {
+  color: green !important;
+}
 
 .language__option {
   display: flex;
