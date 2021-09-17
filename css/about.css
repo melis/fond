@@ -1,0 +1,42 @@
+.about_1,
+.about_2 {
+    width: 50%;
+}
+
+.about_2 {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section_about {
+    padding: 0;
+    display: flex;
+    margin-top: -60px;
+    height: 670px;
+    position: relative;
+}
+
+.about_container {
+    left: 50%;
+    transform: translateX(-50%);
+    margin: auto;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+}
+
+.about_info .title {
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.about_info {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about_container>div {
+    width: 50%;
+}

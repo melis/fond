@@ -117,7 +117,8 @@
 }
 
 .video_modal__active {
-    display: block;
+    display: flex;
+    align-items: center;
 }
 
 .video_modal__close {

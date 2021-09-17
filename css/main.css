@@ -75,7 +75,6 @@ body {
     gap: 20px;
     font-size: 16px;
     align-items: center;
-    margin: 0 10px;
 }
 
 .nav__item {
@@ -424,6 +423,10 @@ a>img {
     font-weight: 500;
 }
 
+.header .nav {
+    margin: 0 10px;
+}
+
 .footer__nav {
     display: flex;
     flex-direction: column;
@@ -522,6 +525,7 @@ a>img {
         height: 100vh;
         top: 0;
         padding: 30px;
+        margin: 0;
     }
     .header .nav>a {
         font-style: normal;
