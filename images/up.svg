@@ -1,23 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!-- Creator: CorelDRAW 2018 (64-Bit) -->
-<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="37.8836mm" height="37.8836mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-viewBox="0 0 1328858.47 1328858.47"
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="37.0368mm" height="37.0368mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 185669.27 185669.27"
  xmlns:xlink="http://www.w3.org/1999/xlink">
  <defs>
   <style type="text/css">
    <![CDATA[
-    .str0 {stroke:#305380;stroke-width:29700.04;stroke-miterlimit:22.9256}
-    .fil0 {fill:none}
-    .fil1 {fill:#305380}
+    .fil0 {fill:#93B5C9}
+    .fil1 {fill:white}
    ]]>
   </style>
  </defs>
  <g id="Слой_x0020_1">
   <metadata id="CorelCorpID_0Corel-Layer"/>
-  <g id="_838264432">
-   <circle class="fil0 str0" cx="664429.24" cy="664429.24" r="649577.46"/>
-   <path class="fil1" d="M660560.2 578794.76c35242.27,15195.53 36417.36,25290.81 64728.34,47810.51l291917.69 244928c18664.69,14353.68 15328.83,12540.17 34572.29,29528.16 52998.45,46789.75 146872.61,30394.57 138278.65,-56429.03 -4195.26,-42373.51 -25462.69,-50279.96 -47466.75,-66818.95 -15286.73,-11491.36 -16209.27,-15079.78 -29584.29,-26132.67l-196689.55 -164025.46c-18156.07,-14220.38 -15816.4,-11298.43 -35270.33,-28830.12l-132048.9 -108540.02c-107343.88,-93835.57 -118119.66,-33779.54 -218181.47,38813.15l-266816.3 214147.57c-43976.55,36319.15 -112191.58,79236.36 -122942.81,119329.83 -18612.07,69393.64 59403.59,119049.21 119336.85,77931.48l400166.57 -321712.44z"/>
-  </g>
+  <circle class="fil0" cx="92834.63" cy="92834.63" r="92834.63"/>
+  <path class="fil1" d="M92281.19 80596.15c5036.66,2171.68 5204.6,3614.45 9250.68,6832.86l41719.54 35003.99c2667.47,2051.36 2190.73,1792.18 4940.91,4220.03 7574.3,6686.98 20990.36,4343.85 19762.15,-8064.58 -599.57,-6055.83 -3639.01,-7185.78 -6783.73,-9549.46 -2184.71,-1642.29 -2316.55,-2155.13 -4228.05,-3734.76l-28109.97 -23441.77c-2594.78,-2032.31 -2260.41,-1614.72 -5040.67,-4120.27l-18871.82 -15512.04c-15341.1,-13410.55 -16881.12,-4827.62 -31181.5,5547l-38132.16 30604.99c-6284.93,5190.57 -16033.91,11324.1 -17570.42,17054.07 -2659.95,9917.42 8489.69,17013.97 17055.08,11137.61l57189.97 -45977.67z"/>
  </g>
 </svg>
