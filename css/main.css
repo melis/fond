@@ -222,12 +222,12 @@ body {
 
 .section__content {
     flex-shrink: 2;
-    flex-basis: 175%;
+    flex-basis: 75%;
     flex-grow: 1;
 }
 
 .section__poster {
-    flex-basis: 35%;
+    /* flex-basis: 35%; */
 }
 
 .section__img {
@@ -567,6 +567,7 @@ body {
     }
     .container {
         max-width: 768px;
+        padding: 0 30px;
     }
     .video_with-hint .video__hint {
         display: none;
@@ -623,6 +624,9 @@ body {
 /* Mobile */
 
 @media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
     .mobile {
         display: block;
     }
