@@ -103,9 +103,11 @@ body {
   background: none;
 }
 .danger {
+  padding: 5px;
   color: red !important;
 }
 .primary {
+  padding: 5px;
   color: green !important;
 }
 

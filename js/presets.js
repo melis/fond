@@ -49,7 +49,7 @@ $(document).ready(function () {
     }
     setTimeout(() => {
       e.target.className = "copy_link";
-      e.target.innerText = "Скопировать";
+      e.target.innerHTML = 'Копировать <img src="/images/copy.svg" alt="">';
     }, 2000);
   });
 
