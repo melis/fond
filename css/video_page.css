@@ -58,15 +58,24 @@
 }
 
 .row .video_card > ul {
-  margin: 15px auto auto 20px;
+  width: 100%;
+  padding: 0 10px;
 }
 
 .row .video_card li {
   margin: 10px 0;
+  display: flex;
+  align-items: center;
+  /* min-width: 130px; */
+}
+.row .video_card li span:last-child {
+  flex-grow: 1;
+  font-size: 14px;
+  line-height: 17px;
+  margin-left: 5px;
 }
 
 .video_card__info span {
-  display: inline-block;
   font-size: 18px;
   line-height: 22px;
   color: #000000;
@@ -74,7 +83,6 @@
 }
 
 .video_card__info a {
-  display: inline-block;
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;

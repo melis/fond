@@ -80,12 +80,12 @@ body {
   color: #000;
 }
 
-a > img {
+.copy_link > img {
   transform: translateY(3px);
 }
 
 .header {
-  padding-top: 35px;
+  padding-top: 25px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -502,6 +502,9 @@ a > img {
 /* Tablet */
 
 @media (max-width: 992px) {
+  .header {
+    padding-top: 35px;
+  }
   .mobile {
     display: none;
   }
@@ -645,9 +648,6 @@ a > img {
   }
   .mobileNone {
     display: none;
-  }
-  .header {
-    padding-top: 40px;
   }
 
   .language {

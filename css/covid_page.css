@@ -76,7 +76,7 @@
 }
 
 .covid_info__list span {
-  display: block;
+  display: inline-block;
 }
 /* .covid_info__list span:last-child {
         flex-grow: 1;
@@ -84,10 +84,6 @@
 
 .covid_info__list > span:first-child {
   min-width: 135px;
-}
-
-.covid_info__list > span:last-child {
-  flex-grow: 1;
 }
 
 .covid_info a {
@@ -104,9 +100,11 @@
 }
 
 .copy_link {
+  color: #284a76;
   border: 1px solid #284a76;
-  padding: 3px;
+  padding: 5px;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .cards {
