@@ -74,6 +74,8 @@ body {
     display: flex;
     gap: 20px;
     font-size: 16px;
+    align-items: center;
+    margin: 0 10px;
 }
 
 .nav__item {
@@ -159,7 +161,7 @@ body {
 .container {
     max-width: 1180px;
     margin: 0 auto;
-    padding: 0 9px;
+    padding: 0 15px;
 }
 
 .button {
@@ -192,7 +194,7 @@ body {
 .text {
     font-family: Montserrat;
     font-size: 18px;
-    line-height: 22px;
+    line-height: 30px;
     opacity: 0.8;
     font-family: Montserrat;
     font-style: normal;
@@ -203,7 +205,7 @@ body {
 .section .container {
     display: flex;
     align-items: center;
-    gap: 55px;
+    gap: 50px;
 }
 
 .section_accent {
@@ -220,7 +222,7 @@ body {
 
 .section__content {
     flex-shrink: 2;
-    flex-basis: 65%;
+    flex-basis: 175%;
     flex-grow: 1;
 }
 
@@ -508,7 +510,7 @@ body {
     .header .nav {
         display: block;
         position: fixed;
-        left: -320px;
+        left: -350px;
         background: #93b5c9;
         transition: 0.5s;
         position: fixed;
@@ -676,6 +678,7 @@ body {
         height: auto;
         z-index: 1;
         height: 0;
+        margin: 0;
     }
     .header .active_nav {
         /* top: 68px; */
@@ -726,4 +729,29 @@ body {
     .footer__links-col-title {
         margin: 30px 0;
     }
+}
+
+#button-up {
+    display: none;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    position: fixed;
+    right: 20px;
+    bottom: 100px;
+    color: #000;
+    transition: .3s;
+    width: 30px;
+    height: 30px;
+}
+
+#button-up img {
+    width: 100%;
+}
+
+#button-up:hover {
+    cursor: pointer;
+    opacity: 1;
+    filter: alpha(opacity=100);
+    transition: .3s;
+    color: #FF0000;
 }
