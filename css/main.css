@@ -80,6 +80,10 @@
             text-align: center;
         }
         
+        .nav__item:hover {
+            color: var(--c-brand);
+        }
+        
         .copy_link>img {
             transform: translateY(3px);
         }
@@ -545,7 +549,7 @@
                 padding: 30px;
                 margin: 0;
             }
-            .header .nav>a {
+            .header .nav>.nav__item {
                 font-style: normal;
                 font-weight: bold;
                 font-family: Montserrat;
@@ -770,8 +774,8 @@
             color: #000;
             transition: 0.3s;
             border-radius: 50%;
-            width: 30px;
-            height: 30px;
+            width: 40px;
+            height: 40px;
         }
         
         #button-up img {
