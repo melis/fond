@@ -72,7 +72,7 @@ body {
 
 .nav {
     display: flex;
-    gap: 10px;
+    gap: 20px;
     font-size: 16px;
     align-items: center;
 }
@@ -446,10 +446,6 @@ body {
 
 .footer__nav-item {
     color: var(--c-light);
-}
-
-.footer__socials {
-    margin-top: auto;
 }
 
 .partners__title {
