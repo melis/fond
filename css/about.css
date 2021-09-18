@@ -1,68 +1,109 @@
-.about_1,
-.about_2 {
-  width: 50%;
-}
-
-.about_2 {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.section_about {
-  padding: 0;
-  display: flex;
-
-  height: 670px;
-  position: relative;
-}
-
-.about_container {
-  left: 50%;
-  transform: translateX(-50%);
-  margin: auto;
-  width: 100%;
-  position: absolute;
-  height: 100%;
-}
-
-.about_info .title {
-  text-align: left;
-  margin-bottom: 40px;
-}
-
-.about_info {
-  width: 50%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-@media (max-width: 992px) {
-  .section_about {
-    height: 400px;
-  }
-}
-
-@media (max-width: 767px) {
-  .about_container {
-    position: static;
-    transform: none;
-    padding: 50px 15px;
-  }
-  .section_about {
-    display: block;
-  }
-  .about_info {
-    width: 100%;
-  }
-  .section_about {
-    display: block;
-    height: auto;
-  }
-  .about_2 {
-    height: 300px;
-    width: 100%;
-  }
-}
+                    .about_1,
+                    .about_2 {
+                        width: 50%;
+                    }
+                    
+                    .about_2 {
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: center;
+                    }
+                    
+                    .section_about {
+                        padding: 0;
+                        display: flex;
+                        height: 670px;
+                        position: relative;
+                    }
+                    
+                    .about_container {
+                        left: 50%;
+                        transform: translateX(-50%);
+                        margin: auto;
+                        width: 100%;
+                        position: absolute;
+                        height: 100%;
+                    }
+                    
+                    .about_info .title {
+                        text-align: left;
+                        margin-bottom: 40px;
+                    }
+                    
+                    .about_info {
+                        width: 50%;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                    }
+                    
+                    .section__links .container {
+                        display: block;
+                    }
+                    
+                    .links {
+                        border: 1px solid red;
+                        font-family: Montserrat;
+                        font-style: normal;
+                        margin-top: 80px;
+                    }
+                    
+                    .links_title {
+                        text-align: left;
+                        font-weight: bold;
+                        font-size: 36px;
+                        line-height: 44px;
+                        color: #284A76;
+                        margin-bottom: 20px;
+                    }
+                    
+                    .links_text>a {
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 22px;
+                        color: #93B5C9;
+                        text-align: left;
+                        max-width: 100%;
+                    }
+                    
+                    @media (max-width: 992px) {
+                        .section_about {
+                            height: 400px;
+                        }
+                        .links_title {
+                            font-size: 24px;
+                            line-height: 30px;
+                        }
+                        .links_text>a {
+                            border: 1px solid;
+                            width: 100%;
+                            display: inline-block;
+                            font-size: 15px;
+                            line-height: 20px;
+                            text-align: left;
+                        }
+                    }
+                    
+                    @media (max-width: 767px) {
+                        .about_container {
+                            position: static;
+                            transform: none;
+                            padding: 50px 15px;
+                        }
+                        .section_about {
+                            display: block;
+                        }
+                        .about_info {
+                            width: 100%;
+                        }
+                        .section_about {
+                            display: block;
+                            height: auto;
+                        }
+                        .about_2 {
+                            height: 300px;
+                            width: 100%;
+                            margin-bottom: 50px;
+                        }
+                    }
