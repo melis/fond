@@ -770,7 +770,7 @@
             /* filter: alpha(opacity=50); */
             position: fixed;
             right: 20px;
-            bottom: 100px;
+            bottom: 50px;
             color: #000;
             transition: 0.3s;
             border-radius: 50%;
