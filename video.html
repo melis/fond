@@ -11,10 +11,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Krona+One&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/about.css" />
-    <link rel="stylesheet" href="./css/covid_page.css" />
-    <link rel="stylesheet" href="./css/posters_page.css" />
-    <link rel="stylesheet" href="./css/video_page.css" />
     <link rel="stylesheet" href="./css/reset.css" />
 </head>
 
@@ -54,12 +50,9 @@
     </div>
 
     <div class="video_modal">
-        <span class="video_modal__close">Закрыть</span>
-        <div class="video">
-            <video src="./images/movie.mp4"></video>
-            <div class="video__controls">
-                <button class="video__play"><i class="fas fa-play"></i></button>
-            </div>
+        <div class="video" >
+            <span class="video_modal__close" >Закрыть</span>
+            <video id="video" src="./images/movie.mp4" controls></video>
         </div>
     </div>
 
@@ -127,13 +120,78 @@
                 </div>
                 <div class="video_card">
                     <div style="position: relative;">
-                        <img class='video_card__img' src="/images/card.jpg" alt="">
-                        <button class="play"><i class="fas fa-play"></i></button>
+                        <img class='video_card__img' src="/images/cod.jpg" alt="">
+                        <button class="play" data-movie__link="./movies/cod.mp4"><i class="fas fa-play"></i></button>
+                    </div>
+                    <ul class="video_card__info">
+                        <li>
+                            <span>Название:</span>
+                            <span><a href="">Call of Duty®: Modern Warfare</a></span>
+                        </li>
+                        <li>
+                            <span>Автор:</span>
+                            <span><a href="">Иван Иванов</a></span>
+                        </li>
+                        <li>
+                            <span>Источник:</span>
+                            <span><span  class="copy_link" data-link="./movies/spider.mp4">Копировать<img src="/images/copy.svg" alt=""></span></span>
+                        </li>
+                    </ul>
+                    <button class="button">Скачать</button>
+                </div>
+                
+                <div class="video_card">
+                    <div style="position: relative;">
+                        <img class='video_card__img' src="/images/spider.jpg" alt="">
+                        <button class="play" data-movie__link="./movies/spider.mp4"><i class="fas fa-play"></i></button>
                     </div>
                     <ul class="video_card__info">
                         <li>
                             <span>Название:</span>
                             <span><a href="">Spider</a></span>
+                        </li>
+                        <li>
+                            <span>Автор:</span>
+                            <span><a href="">Иван Иванов</a></span>
+                        </li>
+                        <li>
+                            <span>Источник:</span>
+                            <span><span  class="copy_link" data-link="./movies/spider.mp4">Копировать<img src="/images/copy.svg" alt=""></span></span>
+                        </li>
+                    </ul>
+                    <button class="button">Скачать</button>
+                </div>
+
+                <div class="video_card">
+                    <div style="position: relative;">
+                        <img class='video_card__img' src="/images/rasa.jpg" alt="">
+                        <button class="play" data-movie__link="./movies/ras.mp4"><i class="fas fa-play"></i></button>
+                    </div>
+                    <ul class="video_card__info">
+                        <li>
+                            <span>Название:</span>
+                            <span><a href="">Расамаха</a></span>
+                        </li>
+                        <li>
+                            <span>Автор:</span>
+                            <span><a href="">Иван Иванов</a></span>
+                        </li>
+                        <li>
+                            <span>Источник:</span>
+                            <span><span  class="copy_link">Копировать  <img src="/images/copy.svg" alt=""></span></span>
+                        </li>
+                    </ul>
+                    <button class="button">Скачать</button>
+                </div>
+                <div class="video_card">
+                    <div style="position: relative;">
+                        <img class='video_card__img' src="/images/cod.jpg" alt="">
+                        <button class="play" data-movie__link="./movies/cod.mp4"><i class="fas fa-play"></i></button>
+                    </div>
+                    <ul class="video_card__info">
+                        <li>
+                            <span>Название:</span>
+                            <span><a href="">Call of Duty®: Modern Warfare</a></span>
                         </li>
                         <li>
                             <span>Автор:</span>
