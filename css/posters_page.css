@@ -1,90 +1,161 @@
 .row .poster_card {
-  width: 300px;
-  height: 541px;
-  margin-bottom: 20px;
-  padding: 5px;
-  padding-top: 25px;
-  background: #d5e7fe;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+    width: 300px;
+    height: 541px;
+    margin-bottom: 20px;
+    padding: 5px;
+    padding-top: 25px;
+    background: #d5e7fe;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.row .poster_card > ul {
-  margin: 15px auto auto 20px;
+.row .poster_card>ul {
+    margin: 15px auto auto 20px;
 }
 
 .poster_bottons button:first-child {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .poster_card__copy {
-  border: 1px solid #284a76;
-  padding: 3px;
-  border-radius: 5px;
-  color: #284a76;
+    border: 1px solid #284a76;
+    padding: 3px;
+    border-radius: 5px;
+    color: #284a76;
 }
 
 .covid_doc {
-  margin: 50px 0;
-  background: #d5e7fe;
-  border-radius: 10px;
-  padding: 60px 0 60px 200px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 29px;
+    margin: 50px 0;
+    background: #d5e7fe;
+    border-radius: 10px;
+    padding: 60px 0 60px 200px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
 }
 
 .covid_doc ul {
-  margin-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 .covid_doc .button {
-  display: inline-block;
-  margin: 0 10px;
+    display: inline-block;
+    margin: 0 10px;
 }
 
 .covid_doc__list {
-  align-items: center;
-  display: flex;
-  margin: 15px 0;
+    align-items: center;
+    display: flex;
+    margin: 15px 0;
 }
 
 .covid_doc__list span {
-  min-width: 150px;
+    min-width: 150px;
 }
 
 .covid_doc__list a {
-  font-weight: 600;
-  color: #284a76;
+    font-weight: 600;
+    color: #284a76;
 }
 
 @media (max-width: 992px) {
-  .covid_doc {
-    padding-left: 60px;
-    margin: 60px;
-  }
-  .covid_doc .button {
-    width: 230px;
-  }
+    .covid_doc {
+        padding-left: 60px;
+        margin: 60px;
+    }
+    .covid_doc .button {
+        width: 230px;
+    }
 }
 
 @media (max-width: 480px) {
-  .covid_doc {
-    font-size: 18px;
-    line-height: 22px;
-    padding: 50px 15px 15px 15px;
-    margin: 50px 0;
-  }
-  .covid_doc__list span {
-    min-width: 150px;
-  }
-  .covid_doc .button {
+    .covid_doc {
+        font-size: 18px;
+        line-height: 22px;
+        padding: 50px 15px 15px 15px;
+        margin: 50px 0;
+    }
+    .covid_doc__list span {
+        min-width: 150px;
+    }
+    .covid_doc .button {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+.images img {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.images img:hover {
+    opacity: 0.7;
+}
+
+
+/* The Modal (background) */
+
+#image-viewer {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
     width: 100%;
-    margin: 10px 0;
-  }
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.modal-content {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+#image-viewer .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#image-viewer .close:hover,
+#image-viewer .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+    .modal-content {
+        width: 100%;
+    }
 }
