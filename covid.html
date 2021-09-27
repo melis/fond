@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Krona+One&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/tabs.css">
+</head>
 
     <body class="home ">
         <div class="shtor mobileNone"></div>
@@ -70,122 +72,134 @@
                 </div>
             </div>
         </section>
-        <section class="section margin_60">
-            <div class="tab">
-                <div class="container ">
-                    <div class="tab_item tab_item__active">
-                        <a href="">Для учителей</a>
+
+        <div class="tabs margin_60">
+          
+                <input type="radio" name="tab-btn" id="tab-btn-1" value="" checked />
+                <label for="tab-btn-1">Для учителей</label>
+    
+                <input type="radio" name="tab-btn" id="tab-btn-2" value="" />
+                <label for="tab-btn-2">Для учеников</label>
+    
+                <input type="radio" name="tab-btn" id="tab-btn-3" value="" />
+                <label for="tab-btn-3">Для родителей</label>
+       
+            
+      
+            <div class="tab-content" id="content-1">
+                <div class="container covidCards ">
+                    <div class="covidCard">
+                        <div class="covid_img" style="background-image: url(/images/covid1.jpg);"></div>
+                        <div class="covid_info">
+                            <ul>
+                                <li class="covid_info__list">
+                                    <span>Название:</span>
+                                    <a href="">Профилактика 1</a>
+                                </li class="covid_info__list">
+                                <li class="covid_info__list">
+                                    <span>Авторы:</span>
+                                    <span><a href="">Брюс Беннер 1</a> <a href="">Питер Паркер 1</a></span>
+                                </li class="covid_info__list">
+                                <li class="covid_info__list">
+                                    <span>Перевод:</span>
+                                    <span><a href="">Оригинальный /команды проекта</a></span>
+                                </li>
+                            </ul>
+                            <div class="covid_info__list">
+                                <span>Источник:</span>
+                                <span class="copy_link"> Копировать <img src="/images/copy.svg" alt=""></span>
+                            </div>
+                            <div class="covid_info__list">
+                                <span>Теги:</span>
+                                <span>
+                               #маски, #профилактика, #какой-то_тег
+                            </span>
+    
+                            </div>
+                            <button class="button">Читать</button>
+                        </div>
                     </div>
-                    <div class="tab_item ">
-                        <a href="">Для учеников</a>
-                    </div>
-                    <div class="tab_item">
-                        <a href="">Для родителей</a>
-                    </div>
+                 </div>
+            </div>
+
+
+            <div class="tab-content" id="content-2">
+                <div class="container covidCards">
+                    <div class="covidCard">
+                        <div class="covid_img" style="background-image: url(/images/covid2.jpg);"></div>
+                        <div class="covid_info">
+                            <ul>
+                                <li class="covid_info__list">
+                                    <span>Название:</span>
+                                    <a href="">Профилактика 2</a>
+                                </li class="covid_info__list">
+                                <li class="covid_info__list">
+                                    <span>Авторы:</span>
+                                    <span><a href="">Брюс Беннер 2</a> <a href="">Питер Паркер 2</a></span>
+                                </li class="covid_info__list">
+                                <li class="covid_info__list">
+                                    <span>Перевод:</span>
+                                    <span><a href="">Оригинальный /команды проекта</a></span>
+                                </li>
+                            </ul>
+                            <div class="covid_info__list">
+                                <span>Источник:</span>
+                                <span class="copy_link">  Копировать <img src="/images/copy.svg" alt=""></span>
+                            </div>
+                            <div class="covid_info__list">
+                                <span>Теги:</span>
+                                <span>
+                               #маски, #профилактика, #какой-то_тег
+                            </span>
+    
+                            </div>
+                            <button class="button">Читать</button>
+                        </div>
+                    </div> 
                 </div>
             </div>
 
-        </section>
-        <div class=" container ">
-            <div class="covidCards margin_60 ">
 
-                <div class="covidCard">
-                    <div class="covid_img" style="background-image: url(/images/covid3.jpg);"></div>
-                    <div class="covid_info">
-                        <ul>
-                            <li class="covid_info__list">
-                                <span>Название:</span>
-                                <a href="">Профилактика</a>
-                            </li class="covid_info__list">
-                            <li class="covid_info__list">
-                                <span>Авторы:</span>
-                                <span><a href="">Брюс Беннер,</a> <a href="">Питер Паркер</a></span>
-                            </li class="covid_info__list">
-                            <li class="covid_info__list">
-                                <span>Перевод:</span>
-                                <span><a href="">Оригинальный /команды проекта</a></span>
-                            </li>
-                        </ul>
-                        <div class="covid_info__list">
-                            <span>Источник:</span>
-                            <span class="copy_link">Копировать <img src="/images/copy.svg" alt=""></span>
+            <div class="tab-content" id="content-3">
+                <div class="container covidCards">
+                    <div class="covidCard">
+                        <div class="covid_img" style="background-image: url(/images/covid3.jpg);"></div>
+                        <div class="covid_info">
+                            <ul>
+                                <li class="covid_info__list">
+                                    <span>Название:</span>
+                                    <a href="">Профилактика 3</a>
+                                </li class="covid_info__list">
+                                <li class="covid_info__list">
+                                    <span>Авторы:</span>
+                                    <span><a href="">Брюс Беннер 3</a> <a href="">Питер Паркер 3</a></span>
+                                </li class="covid_info__list">
+                                <li class="covid_info__list">
+                                    <span>Перевод:</span>
+                                    <span><a href="">Оригинальный /команды проекта</a></span>
+                                </li>
+                            </ul>
+                            <div class="covid_info__list">
+                                <span>Источник:</span>
+                                <span class="copy_link">Копировать <img src="/images/copy.svg" alt=""></span>
+                            </div>
+                            <div class="covid_info__list">
+                                <span>Теги:</span>
+                                <span>
+                               #маски, #профилактика, #какой-то_тег
+                            </span>
+    
+                            </div>
+                            <button class="button">Читать</button>
                         </div>
-                        <div class="covid_info__list">
-                            <span>Теги:</span>
-                            <span>
-                           #маски, #профилактика, #какой-то_тег
-                        </span>
-
-                        </div>
-                        <button class="button">Читать</button>
                     </div>
                 </div>
-                <div class="covidCard">
-                    <div class="covid_img" style="background-image: url(/images/covid2.jpg);"></div>
-                    <div class="covid_info">
-                        <ul>
-                            <li class="covid_info__list">
-                                <span>Название:</span>
-                                <a href="">Профилактика</a>
-                            </li class="covid_info__list">
-                            <li class="covid_info__list">
-                                <span>Авторы:</span>
-                                <span><a href="">Брюс Беннер,</a> <a href="">Питер Паркер</a></span>
-                            </li class="covid_info__list">
-                            <li class="covid_info__list">
-                                <span>Перевод:</span>
-                                <span><a href="">Оригинальный /команды проекта</a></span>
-                            </li>
-                        </ul>
-                        <div class="covid_info__list">
-                            <span>Источник:</span>
-                            <span class="copy_link">  Копировать <img src="/images/copy.svg" alt=""></span>
-                        </div>
-                        <div class="covid_info__list">
-                            <span>Теги:</span>
-                            <span>
-                           #маски, #профилактика, #какой-то_тег
-                        </span>
-
-                        </div>
-                        <button class="button">Читать</button>
-                    </div>
-                </div>
-                <div class="covidCard">
-                    <div class="covid_img" style="background-image: url(/images/covid1.jpg);"></div>
-                    <div class="covid_info">
-                        <ul>
-                            <li class="covid_info__list">
-                                <span>Название:</span>
-                                <a href="">Профилактика</a>
-                            </li class="covid_info__list">
-                            <li class="covid_info__list">
-                                <span>Авторы:</span>
-                                <span><a href="">Брюс Беннер,</a> <a href="">Питер Паркер</a></span>
-                            </li class="covid_info__list">
-                            <li class="covid_info__list">
-                                <span>Перевод:</span>
-                                <span><a href="">Оригинальный /команды проекта</a></span>
-                            </li>
-                        </ul>
-                        <div class="covid_info__list">
-                            <span>Источник:</span>
-                            <span class="copy_link"> Копировать <img src="/images/copy.svg" alt=""></span>
-                        </div>
-                        <div class="covid_info__list">
-                            <span>Теги:</span>
-                            <span>
-                           #маски, #профилактика, #какой-то_тег
-                        </span>
-
-                        </div>
-                        <button class="button">Читать</button>
-                    </div>
-                </div>
-
             </div>
 
         </div>
+  
+
+
 
         <footer class="footer">
             <div class="container">
