@@ -37,6 +37,7 @@
   font-size: 16px;
   line-height: 1.5;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+
   cursor: pointer;
   /* position: relative;
   top: 1px; */
@@ -61,7 +62,6 @@
 .tabs > input[type="radio"]:checked + label {
   border-bottom: 5px solid #284a76;
   color: #284a76;
-  /* border-bottom: 1px solid #fff; */
 }
 
 .tab-content {
@@ -69,18 +69,18 @@
 
 @media (max-width: 480px) {
   .tabs > label {
-    font-size: 13px;
+    font-size: 14px;
     margin: 0 5px;
-    transform: translateY(0);
-    border: none;
-    padding: 0;
+    transform: translateY(3px);
+    border-bottom: 3px solid #93b5c9;
+    padding: 5px 0;
   }
 
   .tabs > input[type="radio"]:checked + label {
-    border: none;
+    border-bottom: 3px solid #284a76;
   }
   .tabs > .tab-content {
-    border: none;
+    border-top: 3px solid #93b5c9;
     padding: 0;
   }
 }
